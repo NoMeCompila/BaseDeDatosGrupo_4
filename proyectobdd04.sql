@@ -3,7 +3,7 @@ go
 
 use proyectobdd04;
 go
---TABLA JUEGO
+
 create table juego(
 	idDesarrolladora int,
 	idFranquicia int,
