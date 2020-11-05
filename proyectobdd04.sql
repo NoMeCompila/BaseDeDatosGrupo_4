@@ -3,7 +3,7 @@ go
 
 use proyectobdd04;
 go
---tabla juego probando
+--tabla juego probando git 
 create table juego(
 	idDesarrolladora int,
 	idFranquicia int,
