@@ -211,3 +211,8 @@ create table ventaDetalle(
 	constraint fk_factura foreign key (nroFactura) references ventaCabecera (nroFactura)
 );
 go
+
+
+alter table ventaCabecera
+	add constraint FK_usuarioC foreign key (idUsuario) references usuario (idUsuario);
+go
