@@ -50,3 +50,25 @@ create table usuario(
 
  -- AGREGAR LA CLAVE FORANEA DESP DE AGREGAR LA TABLA LOGRO
 
+ create table LogrosGanados(
+ idUsuario int   not null, 
+ idLogro int not null,
+ descripcion varchar (20) not null
+  CONSTRAINT pk_logrosGanados primary key (idUsuario, idLogro)
+  
+ )
+
+ create table logro (
+ idLogro int primary key, 
+ descricpcion varchar (10))
+
+  create table Logros_por_Juego(
+  idLogro int not null, 
+  idJuego int not null,
+  CONSTRAINT pk_Logros_por_Juego primary key (idLogro, idJuego))
+
+  --Agregar las FK desp de idDesarrolladora y idFranquicia
+
+
+
+
