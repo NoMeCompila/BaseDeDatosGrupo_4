@@ -29,7 +29,7 @@ create table genero(
 );
 go
 
-create table 
+
 
 ----- SOY ADMIM
 
@@ -39,3 +39,13 @@ create table
  
 
  ---aAAAAAAAAAAA
+
+create table usuario(
+ NomYAp varchar (60) not null,
+ email varchar (60) not null,
+ fechNac date,
+ usuario varchar (30) not null,
+ idUsuario int primary key 
+ )
+
+ -- AGREGAR LA CLAVE FORANEA DESP DE AGREGAR LA TABLA LOGRO
