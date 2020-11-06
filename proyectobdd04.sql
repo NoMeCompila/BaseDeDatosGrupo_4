@@ -68,6 +68,44 @@ create table usuario(
   CONSTRAINT pk_Logros_por_Juego primary key (idLogro, idJuego))
 
   --Agregar las FK desp de idDesarrolladora y idFranquicia
+  
+  
+  
+  
+  -- tabla Juego_en_libreria
+create table juego_en_libreria(
+	idUsuario int not null,
+	idDesarrolladora int not null,
+	idFranquicia int not null,
+	idJuego int not null,
+	hrsJugadas float,
+	constraint PK_juego_en_libreria primary key (idUsuario, idJuego),
+);
+go
+
+create table juegosDeseados(
+	idUsuario int not null,
+	idDesarrolladora int not null,
+	idFranquicia int not null,
+	idJuego int not null,
+	constraint PK_juegosDeseados primary key (idUsuario, idJuego),
+);
+go
+
+create table pais(
+	idPais int not null,
+	descripcion varchar(25) not null,
+	constraint PK_pais primary key (idPais),
+);
+go
+
+create table provincia(
+	idPais int not null,
+	idProvincia int not null,
+	descripcion varchar(20) not null,
+	constraint PK_provincia primary key (idProvincia),
+);
+go
 
 
 
