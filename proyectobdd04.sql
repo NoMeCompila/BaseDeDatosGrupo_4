@@ -1,3 +1,5 @@
+--MIO
+
 create database proyectobdd04;--nombre de la base de datos
 go
 
@@ -216,3 +218,6 @@ go
 alter table ventaCabecera
 	add constraint FK_usuarioC foreign key (idUsuario) references usuario (idUsuario);
 go
+
+alter table usuario
+	add constraint CHK_edad check ((year(getdate()-year(fechNac))  >= 16))
